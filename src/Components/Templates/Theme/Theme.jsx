@@ -3,7 +3,7 @@ import { FaRegLightbulb } from "react-icons/fa";
 import { MdDarkMode } from "react-icons/md";
 
 export default function Theme() {
-  const [theme, setTheme] = useState(localStorage.getItem("theme"));
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
   useEffect(() => {
     localStorage.setItem("theme", theme);

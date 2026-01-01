@@ -34,7 +34,7 @@ export default function Home() {
           </div>
         </div>
         <div className="right">
-          <img src="/public/images/imgPortfolio.jpg" alt="image-portfolio" />
+          <img src="/images/imgPortfolio.jpg" alt="image-portfolio" />
         </div>
       </div>
     </section>

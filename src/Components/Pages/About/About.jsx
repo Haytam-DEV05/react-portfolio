@@ -5,17 +5,17 @@ export default function About() {
   const sliderRef = useRef(null);
 
   const images = [
-    "/public/images/html.jpg",
-    "/public/images/css.jpg",
-    "/public/images/js.jpg",
-    "/public/images/bootstrap.jpg",
-    "/public/images/tailwind.jpg",
-    "/public/images/php.jpg",
-    "/public/images/mysql.jpg",
-    "/public/images/laravel.jpg",
-    "/public/images/react.jpg",
-    "/public/images/postman.jpg",
-    "/public/images/git.jpg",
+    "/images/html.jpg",
+    "/images/css.jpg",
+    "/images/js.jpg",
+    "/images/bootstrap.jpg",
+    "/images/tailwind.jpg",
+    "/images/php.jpg",
+    "/images/mysql.jpg",
+    "/images/laravel.jpg",
+    "/images/react.jpg",
+    "/images/postman.jpg",
+    "/images/git.jpg",
   ];
 
   useEffect(() => {

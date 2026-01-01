@@ -8,49 +8,49 @@ export default function Projects() {
     {
       id: 1,
       title: "Lorem, ipsum dolor.",
-      img_path: "/public/images/bootstrap.jpg",
+      img_path: "/images/bootstrap.jpg",
       description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
               modi eum exercitationem dolorem consequuntur possimus.`,
     },
     {
       id: 2,
       title: "Lorem, ipsum dolor.",
-      img_path: "/public/images/css.jpg",
+      img_path: "/images/css.jpg",
       description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
               modi eum exercitationem dolorem consequuntur possimus.`,
     },
     {
       id: 3,
       title: "Lorem, ipsum dolor.",
-      img_path: "/public/images/php.jpg",
+      img_path: "/images/php.jpg",
       description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
               modi eum exercitationem dolorem consequuntur possimus.`,
     },
     {
       id: 4,
       title: "Lorem, ipsum dolor.",
-      img_path: "/public/images/react.jpg",
+      img_path: "/images/react.jpg",
       description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
               modi eum exercitationem dolorem consequuntur possimus.`,
     },
     {
       id: 5,
       title: "Lorem, ipsum dolor.",
-      img_path: "/public/images/js.jpg",
+      img_path: "/images/js.jpg",
       description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
               modi eum exercitationem dolorem consequuntur possimus.`,
     },
     {
       id: 6,
       title: "Lorem, ipsum dolor.",
-      img_path: "/public/images/tailwind.jpg",
+      img_path: "/images/tailwind.jpg",
       description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
               modi eum exercitationem dolorem consequuntur possimus.`,
     },
     {
       id: 7,
       title: "Lorem, ipsum dolor.",
-      img_path: "/public/images/laravel.jpg",
+      img_path: "/images/laravel.jpg",
       description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
               modi eum exercitationem dolorem consequuntur possimus.`,
     },
