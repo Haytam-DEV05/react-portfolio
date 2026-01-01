@@ -1,0 +1,75 @@
+#contact {
+    padding: 0 10px;
+}
+
+#contact form {
+    margin: 20px 0;
+}
+
+#contact form div {
+    margin: 15px 0;
+}
+
+#contact form div label {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+#contact form div input,
+#contact form div textarea {
+    width: 100%;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: var(--soft);
+    outline: none;
+}
+
+#contact form div textarea::placeholder,
+#contact form div input::placeholder {
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 1;
+    transition: .4s;
+}
+
+#contact form div textarea:focus::placeholder,
+#contact form div input:focus::placeholder {
+    font-size: 0;
+    opacity: 0;
+}
+
+#contact form .btn {
+    background-color: var(--primary);
+    padding: 6px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+
+.success-msg {
+    margin-top: 15px;
+    color: #22c55e;
+    font-weight: 500;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.error-msg {
+    margin-top: 15px;
+    color: #ef4444;
+    font-weight: 500;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
