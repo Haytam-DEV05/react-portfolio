@@ -80,7 +80,7 @@ export default function Header() {
             {/* MOBILE MENU */}
             <div className="md:hidden flex items-center gap-4">
               <Theme />
-              <button className="cursor-pointer" onClick={() => setOpen(!open)}>
+              <button className="cursor-pointer" onClick={() => setOpen(!open)} aria-label="button-menu">
                 {open ? <HiX size={30} /> : <HiMenu size={30} />}
               </button>
             </div>

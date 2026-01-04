@@ -16,7 +16,7 @@ export default function Theme() {
 
   return (
     <>
-      <button onClick={handleButtonTheme} className="cursor-pointer">
+      <button onClick={handleButtonTheme} className="cursor-pointer" aria-label="button-change-theme">
         {theme === "light" ? (
           <MdDarkMode size={30} />
         ) : (

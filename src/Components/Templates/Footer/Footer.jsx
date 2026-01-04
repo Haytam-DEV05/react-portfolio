@@ -8,16 +8,19 @@ export default function Footer() {
       id: 1,
       icon: <FaGithub size={25} />,
       href: "https://github.com/HAYTAM-DEV05",
+      aria_label: "Visit my GitHub profile",
     },
     {
       id: 2,
       icon: <FaLinkedin size={25} />,
       href: "https://www.linkedin.com/in/haitam-full-stack-developer-nefal-649698361/",
+      aria_label: "Visit my LinkedIn profile",
     },
     {
       id: 3,
       icon: <SiFrontendmentor size={25} />,
       href: "https://www.frontendmentor.io/profile/Haytam-DEV05",
+      aria_label: "Visit my Front-End profile",
     },
   ];
 
@@ -30,13 +33,13 @@ export default function Footer() {
         All Right Reserverd By{" "}
         <span className="primary cursor-pointer">Haitam Nefal</span>
       </p>
-      <ul className="flex gap-6">
+      <ul className="flex gap-6 socials" >
         {socialIcons.map((ele) => (
           <li
             key={ele.id}
             className="cursor-pointer max-w-fit mx-auto my-2 hover:text-[var(--primary)] transition-colors duration-200"
           >
-            <a href={ele.href} target="_blanc">
+            <a href={ele.href} target="_blanc" aria-label={ele.aria_label}>
               {ele.icon}
             </a>
           </li>

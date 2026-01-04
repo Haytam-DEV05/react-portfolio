@@ -20,12 +20,13 @@ export default function Home() {
             and real-world projects.
           </p>
           <div className="flex flex-col buttons my-3 md:flex-row gap-x-10 gap-y-3">
-            <button className="bg-[var(--primary)] px-2 py-1 cursor-pointer rounded-2xl ">
+            <button className="bg-[var(--primary)] px-2 py-1 cursor-pointer rounded-2xl" aria-label="downoald cv">
               <a href="/src/assets/cv/bootstrap.jpg" download>
                 Download Cv
               </a>
             </button>
             <NavLink
+            aria-label="open contact form"
               className="bg-[var(--primary)] px-5 py-1.5 cursor-pointer rounded-2xl text-center"
               to="/Contact"
             >
@@ -34,7 +35,7 @@ export default function Home() {
           </div>
         </div>
         <div className="right">
-          <img src="/images/imgPortfolio.jpg" alt="image-portfolio" />
+          <img src="/images/picture-portfolio.jpg" alt="image-portfolio" />
         </div>
       </div>
     </section>
