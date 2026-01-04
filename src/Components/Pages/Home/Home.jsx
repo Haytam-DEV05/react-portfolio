@@ -20,14 +20,14 @@ export default function Home() {
             and real-world projects.
           </p>
           <div className="flex flex-col buttons my-3 md:flex-row gap-x-10 gap-y-3">
-            <button className="bg-[var(--primary)] px-2 py-1 cursor-pointer rounded-2xl" aria-label="downoald cv">
+            <button className="bg-[var(--primary)] px-2 py-1 cursor-pointer rounded-2xl text-[#fff]" aria-label="downoald-cv">
               <a href="/src/assets/cv/bootstrap.jpg" download>
                 Download Cv
               </a>
             </button>
             <NavLink
-            aria-label="open contact form"
-              className="bg-[var(--primary)] px-5 py-1.5 cursor-pointer rounded-2xl text-center"
+            aria-label="open-contact-form"
+              className="bg-[var(--primary)] px-5 py-1.5 cursor-pointer rounded-2xl text-center text-[#fff]"
               to="/Contact"
             >
               Contact Me

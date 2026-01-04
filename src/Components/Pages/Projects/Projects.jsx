@@ -75,7 +75,7 @@ export default function Projects() {
           key={index}
           className={
             currentPage === index + 1
-              ? "bg-[var(--primary)] p-1 mx-2 cursor-pointer w-[30px] h-[30px] transition-all duration-300 text-[var(--text)] rounded-full"
+              ? "bg-[var(--primary)] p-1 mx-2 cursor-pointer w-[30px] h-[30px] transition-all duration-300 text-[#fff] rounded-full"
               : "hover:bg-[var(--primary)] bg-[var(--soft)] p-1 mx-2 cursor-pointer w-[30px] h-[30px] rounded-full shadow-lg text-[var(--text)] rounded-[50%]"
           }
           onClick={() => {
@@ -116,11 +116,11 @@ export default function Projects() {
                   {project.title}
                 </h3>
                 <p className="text-[15px]">{project.description}</p>
-                <div className="buttons mt-2">
-                  <button className="mx-2 bg-[var(--primary)] px-5 py-1 cursor-pointer rounded-4xl">
+                <div className="buttons mt-2 text-[#fff]">
+                  <button className="mx-2 bg-[var(--primary)] px-5 py-1 cursor-pointer rounded-4xl" aria-label="show project in github">
                     github
                   </button>
-                  <button className="mx-2 bg-[var(--primary)] px-5 py-1 cursor-pointer rounded-4xl">
+                  <button className="mx-2 bg-[var(--primary)] px-5 py-1 cursor-pointer rounded-4xl" aria-label="show project in live">
                     live
                   </button>
                 </div>
