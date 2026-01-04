@@ -35,7 +35,7 @@ export default function Home() {
           </div>
         </div>
         <div className="right">
-          <img src="/images/picture-portfolio.jpg" alt="image-portfolio" />
+          <img src="/images/picture-portfolio.webp" alt="image-portfolio" />
         </div>
       </div>
     </section>

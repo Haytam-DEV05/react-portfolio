@@ -68,7 +68,7 @@ export default function Contact() {
               required
             ></textarea>
           </div>
-          <button type="submit" className="btn" disabled={loading}>
+          <button type="submit" className="btn text-[#fff]" disabled={loading} aria-label="send message">
             {loading ? "Snding ..." : "Send Message"}
           </button>
         </form>

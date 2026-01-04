@@ -5,22 +5,22 @@ export default function About() {
   const sliderRef = useRef(null);
 
   const images = [
-    "/images/html.jpg",
-    "/images/css.jpg",
-    "/images/js.jpg",
-    "/images/bootstrap.jpg",
-    "/images/tailwind.jpg",
-    "/images/php.jpg",
-    "/images/mysql.jpg",
-    "/images/laravel.jpg",
-    "/images/react.jpg",
-    "/images/postman.jpg",
-    "/images/git.jpg",
+    "/images/html.webp",
+    "/images/css.webp",
+    "/images/js.webp",
+    "/images/bootstrap.webp",
+    "/images/tailwind.webp",
+    "/images/php.webp",
+    "/images/mysql.webp",
+    "/images/laravel.webp",
+    "/images/react.webp",
+    "/images/postman.webp",
+    "/images/git.webp",
   ];
 
   useEffect(() => {
     const slider = sliderRef.current;
-    let speed = 0.5;
+    let speed = 0.7;
 
     const infiniteScroll = () => {
       if (!slider) return;
