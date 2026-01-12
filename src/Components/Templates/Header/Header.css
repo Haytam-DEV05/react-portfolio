@@ -1,3 +1,4 @@
+.rotate,
 button.rotate {
   animation: rorateMenu .5s ease-in-out forwards;
 }
@@ -12,8 +13,45 @@ button.rotate {
   }
 }
 
+
+.showMenu {
+  animation: showMenu 1.2s ease-in-out forwards;
+}
+
+@keyframes showMenu {
+  from {
+    width: 0px;
+    right: -100px;
+    opacity: .6;
+  }
+
+  to {
+    width: 250px;
+    right: 0px;
+    opacity: 1;
+  }
+}
+
+
+.closeMenu {
+  animation: closeMenu 1.3s ease-in-out forwards;
+}
+
+@keyframes closeMenu {
+  from {
+    right: 0px;
+    opacity: 1;
+    width: 250px;
+  }
+
+  to {
+    right: -100px;
+    opacity: 0.6;
+    width: 0px;
+  }
+}
+
 .mobile-query {
-  /* position: absolute; */
   right: 10px;
 }
 
@@ -33,7 +71,3 @@ button.rotate {
     transform: translateY(0);
   }
 }
-
-/* ================= */
-/* RESPONSIVE */
-/* ================= */
