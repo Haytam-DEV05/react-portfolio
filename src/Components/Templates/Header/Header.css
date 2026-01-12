@@ -1,5 +1,18 @@
+button.rotate {
+  animation: rorateMenu .5s ease-in-out forwards;
+}
 
-.mobile-query{
+@keyframes rorateMenu {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.mobile-query {
   /* position: absolute; */
   right: 10px;
 }
@@ -10,11 +23,17 @@
 }
 
 @keyframes slideDown {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ================= */
 /* RESPONSIVE */
 /* ================= */
-

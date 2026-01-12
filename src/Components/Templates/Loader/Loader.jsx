@@ -14,7 +14,7 @@ function Loader({ onFinish }) {
         }
         return prev + 1;
       });
-    }, 20); // 2 seconds
+    }, 20);
 
     return () => clearInterval(interval);
   }, [onFinish]);

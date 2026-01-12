@@ -7,8 +7,10 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Lorem, ipsum dolor.",
-      img_path: "/images/bootstrap.webp",
+      title: "Front End Rccomerce Website",
+      img_path: "/images/front-end-Ecomme.png",
+      github_path: "https://github.com/Haytam-DEV05/mini-ecommerce",
+      live_path: "https://mini-ecommerce-one-delta.vercel.app/",
       description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
               modi eum exercitationem dolorem consequuntur possimus.`,
     },
@@ -56,7 +58,9 @@ export default function Projects() {
     },
   ];
 
-  const [pagProjects, setPagProjects] = useState(projects.slice(0, itemsPerPage));
+  const [pagProjects, setPagProjects] = useState(
+    projects.slice(0, itemsPerPage)
+  );
 
   // FUNCTION NAVIGATE TO NEXT PAGE =>
   const navigateToNextPage = (param) => {
@@ -117,11 +121,24 @@ export default function Projects() {
                 </h3>
                 <p className="text-[15px]">{project.description}</p>
                 <div className="buttons mt-2 text-[#fff]">
-                  <button className="mx-2 bg-[var(--primary)] px-5 py-1 cursor-pointer rounded-4xl" aria-label="show project in github">
-                    github
+                  <button
+                    className="mx-2 bg-[var(--primary)] px-5 py-1 cursor-pointer rounded-4xl"
+                    aria-label="show project in github"
+                  >
+                    <a href={project.github_path} target="_blank">
+                      github
+                    </a>
                   </button>
-                  <button className="mx-2 bg-[var(--primary)] px-5 py-1 cursor-pointer rounded-4xl" aria-label="show project in live">
-                    live
+                  <button
+                    className="mx-2 bg-[var(--primary)] px-5 py-1 cursor-pointer rounded-4xl"
+                    aria-label="show project in live"
+                  >
+                    <a
+                      href={project.live_path ? project.live_path : ""}
+                      target="_blank"
+                    >
+                      live
+                    </a>
                   </button>
                 </div>
               </div>
