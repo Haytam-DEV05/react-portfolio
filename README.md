@@ -28,10 +28,14 @@ This project showcases my skills, projects, and experience as a frontend develop
 
 ---
 
+## Picture For The Portfolio
+
+![Alt text](public/images/css.web)
+
+---
+
 ## ▶️ Getting Started
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/USERNAME/REPO_NAME.git
-
-
+git clone https://github.com/Haytam-DEV05/react-portfolio
