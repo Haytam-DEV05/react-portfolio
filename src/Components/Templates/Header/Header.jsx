@@ -10,6 +10,7 @@ import "./Header.css";
 import Home from "../../Pages/Home/Home";
 import About from "../../Pages/About/About";
 import Projects from "../../Pages/Projects/Projects";
+import DetailleProject from "../../Pages/Projects/DetailleProject";
 import Contact from "../../Pages/Contact/Contact";
 import Theme from "../Theme/Theme";
 import { HiMenu, HiX } from "react-icons/hi";
@@ -34,6 +35,7 @@ export default function Header() {
         { index: true, element: <Home /> },
         { path: "About", element: <About /> },
         { path: "Projects", element: <Projects /> },
+        { path: "Projects/:id", element: <DetailleProject /> },
         { path: "Contact", element: <Contact /> },
         {
           path: "*",
@@ -97,7 +99,7 @@ export default function Header() {
 
             {/* MOBILE UL */}
             <ul
-              className={`md:hidden fixed top-0 -right-25 h-screen bg-(--bg) py-10 px-6 transition-all duration-1000 shadow-2xl ${
+              className={`md:hidden fixed top-0 -right-25 min-h-screen bg-(--bg) py-10 px-6 transition-all duration-1000 shadow-2xl ${
                 open ? "showMenu" : "closeMenu"
               }`}
             >
