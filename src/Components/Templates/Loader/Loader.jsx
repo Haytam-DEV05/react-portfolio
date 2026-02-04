@@ -24,10 +24,7 @@ function Loader({ onFinish }) {
       <div className="loader-box">
         <p>Loading portfolio...</p>
         <div className="progress">
-          <div
-            className="progress-bar"
-            style={{ width: `${progress}%` }}
-          ></div>
+          <div className="progress-bar" style={{ width: `${progress}%` }}></div>
         </div>
         <span>{progress}%</span>
       </div>

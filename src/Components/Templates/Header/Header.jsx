@@ -6,6 +6,7 @@ import {
   NavLink,
 } from "react-router";
 
+// PAGES =>
 import "./Header.css";
 import Home from "../../Pages/Home/Home";
 import About from "../../Pages/About/About";
@@ -13,8 +14,10 @@ import Projects from "../../Pages/Projects/Projects";
 import DetailleProject from "../../Pages/Projects/DetailleProject";
 import Contact from "../../Pages/Contact/Contact";
 import Theme from "../Theme/Theme";
-import { HiMenu, HiX } from "react-icons/hi";
+import NotFound from "../../Pages/PageNotFound/NotFound";
+// ==
 
+import { HiMenu, HiX } from "react-icons/hi";
 import { socialIcons } from "../Footer/Footer";
 
 export default function Header() {
@@ -37,14 +40,7 @@ export default function Header() {
         { path: "Projects", element: <Projects /> },
         { path: "Projects/:id", element: <DetailleProject /> },
         { path: "Contact", element: <Contact /> },
-        {
-          path: "*",
-          element: (
-            <div className="min-h-[70vh] min-w-full flex items-center justify-center">
-              <h2 className="text-[50px]">404 NOT FOUND</h2>
-            </div>
-          ),
-        },
+        { path: "*", element: <NotFound /> },
       ],
     },
   ]);
@@ -149,7 +145,7 @@ export default function Header() {
             </ul>
           </div>
         </nav>
-        <main className="px-3 min-h-[90vh] pt-25 flex justify-center items-center flex-col">
+        <main className="px-3 relative min-h-[90vh] pt-25 flex justify-center items-center flex-col overflow-hidden">
           <Outlet />
         </main>
       </>

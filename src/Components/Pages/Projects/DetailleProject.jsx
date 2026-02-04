@@ -8,7 +8,19 @@ export default function DetailleProject() {
   const project = DataProjects.find((p) => p.id == id);
 
   if (!project) {
-    return <p className="text-center mt-10">Project not found 😕</p>;
+    return (
+      <div>
+        <button
+          onClick={() => navigate(-1)}
+          className="mb-1 text-(--primary) hover:underline"
+        >
+          ← Back to projects
+        </button>
+        <p className="text-center text-[50px] font-bold font-serif">
+          Project Not Available
+        </p>
+      </div>
+    );
   }
 
   return (
